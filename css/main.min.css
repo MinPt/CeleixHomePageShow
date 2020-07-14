@@ -133,6 +133,59 @@
   .About-section img {
     margin-left: 1em; }
 
+.contact-header-container {
+  background-image: url(../images/contact-header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  color: white;
+  padding: 0; }
+  .contact-header-container .layer {
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 100, 240, 0.35); }
+    .contact-header-container .layer .contact-block {
+      height: 75%;
+      padding: 0 16px;
+      margin: 0em 1em; }
+      .contact-header-container .layer .contact-block h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 8vw;
+        font-family: Roboto-Light;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        line-height: 1em; }
+  .contact-header-container .nav-item {
+    padding-top: 0.5rem; }
+  .contact-header-container .nav-link-item {
+    text-decoration: none;
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-transform: uppercase;
+    font-size: 1.25vw;
+    font-family: Roboto-Regular;
+    transition-duration: 0.2s; }
+    .contact-header-container .nav-link-item:hover {
+      color: white;
+      text-decoration: none;
+      border-bottom: 3px solid white;
+      padding-bottom: 5px;
+      transition-duration: 0.2s; }
+    @media (max-width: 767px) {
+      .contact-header-container .nav-link-item {
+        font-size: 1rem;
+        margin: 2em; } }
+  .contact-header-container nav {
+    margin-left: 1em; }
+    .contact-header-container nav .logo {
+      width: 25vw;
+      max-width: 200px; }
+
 .Core-values-container {
   min-height: 743px;
   height: auto; }
@@ -235,6 +288,9 @@
     font-family: Roboto-Black;
     text-transform: uppercase;
     color: #004c8c; }
+    @media (max-width: 767px) {
+      .Engineering-container h3 {
+        font-size: 5vw; } }
   .Engineering-container .Engineering-text {
     font-family: Roboto-Bold;
     margin-top: 5em;
@@ -245,6 +301,71 @@
     color: #004c8c;
     letter-spacing: 1px;
     line-height: 1.8rem; }
+
+.get-in-touch-block {
+  min-height: 420px;
+  background-color: #eeeeee; }
+  .get-in-touch-block img {
+    width: 20px; }
+  .get-in-touch-block div {
+    margin: 0;
+    padding: 1em; }
+  .get-in-touch-block h2 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-family: Roboto-Light;
+    color: #428ac9; }
+  .get-in-touch-block p {
+    font-family: Roboto-Regular;
+    color: #00648c;
+    font-size: 150%;
+    line-height: 115%;
+    margin-top: 1em; }
+  .get-in-touch-block span {
+    font-family: Roboto-Bold; }
+    .get-in-touch-block span .font-roboto-light {
+      font-family: Roboto-Light; }
+
+.ways-to-reach {
+  min-height: 380px;
+  height: auto; }
+  .ways-to-reach .ways-to-reach-logo-text {
+    margin: 2em 0em; }
+  .ways-to-reach .contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    height: auto; }
+    .ways-to-reach .contact-info-grid div {
+      margin-top: 2em; }
+      .ways-to-reach .contact-info-grid div p {
+        margin: 0;
+        font-family: Roboto-Regular;
+        color: #004c8c; }
+      .ways-to-reach .contact-info-grid div a {
+        color: #7297b1; }
+        .ways-to-reach .contact-info-grid div a:hover {
+          text-decoration: none;
+          color: #7297b1; }
+      .ways-to-reach .contact-info-grid div h4 {
+        font-family: Roboto-Bold;
+        color: #004c8c;
+        text-transform: uppercase; }
+
+.worldwide-locations {
+  min-height: 425px;
+  height: auto;
+  background-color: #eeeeee; }
+  .worldwide-locations div {
+    margin: 0;
+    padding: 3em; }
+  .worldwide-locations ul {
+    font-family: Roboto-Bold;
+    color: #004c8c;
+    border-right: 1px solid gray; }
+    .worldwide-locations ul li {
+      list-style: none;
+      font-family: Roboto-Regular;
+      color: #6399c7; }
 
 .team-locations-gap {
   min-height: 220px; }
