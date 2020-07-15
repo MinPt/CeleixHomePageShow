@@ -42,7 +42,7 @@
   color: white;
   padding: 0; }
   .header-container h1 {
-    font-size: 8vw;
+    font-size: calc(25px + 60 * ((100vw - 320px) / 840));
     font-family: industry;
     text-transform: uppercase; }
   .header-container p {
@@ -61,7 +61,7 @@
     padding-left: 2vw;
     padding-right: 2vw;
     text-transform: uppercase;
-    font-size: 1.25vw;
+    font-size: calc(8px + 6 * ((100vw - 320px) / 840));
     font-family: Roboto-Regular;
     transition-duration: 0.2s; }
     .header-container .nav-link-item:hover {
@@ -79,7 +79,7 @@
     background: none;
     border: 2px solid white;
     color: white;
-    font-size: 1.5vw;
+    font-size: calc(16px + 0 * ((100vw - 320px) / 840));
     text-transform: uppercase;
     padding: 1vh 3vw;
     margin-top: 2em;
@@ -89,7 +89,7 @@
       transition-duration: 0.5s; }
     @media (max-width: 767px) {
       .header-container .solutions-btn {
-        font-size: 2rem; } }
+        font-size: calc(16px + 0 * ((100vw - 320px) / 840)); } }
   .header-container nav .navbar-brand {
     width: 30vw; }
   .header-container nav .logo {
@@ -138,23 +138,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   color: white;
   padding: 0; }
   .contact-header-container .layer {
-    height: inherit;
+    min-height: 400px;
+    height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 100, 240, 0.35); }
     .contact-header-container .layer .contact-block {
-      height: 75%;
+      height: 300px;
       padding: 0 16px;
       margin: 0em 1em; }
       .contact-header-container .layer .contact-block h1 {
+        font-size: calc(42px + 47 * ((100vw - 320px) / 840));
         padding: 0;
         margin: 0;
-        font-size: 8vw;
         font-family: Roboto-Light;
         text-transform: uppercase;
         letter-spacing: 0.2em;
@@ -167,7 +169,7 @@
     padding-left: 2vw;
     padding-right: 2vw;
     text-transform: uppercase;
-    font-size: 1.25vw;
+    font-size: calc(8px + 6 * ((100vw - 320px) / 840));
     font-family: Roboto-Regular;
     transition-duration: 0.2s; }
     .contact-header-container .nav-link-item:hover {
@@ -310,16 +312,20 @@
   .get-in-touch-block div {
     margin: 0;
     padding: 1em; }
+  .get-in-touch-block h3 {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 840));
+    text-transform: uppercase;
+    font-family: Roboto-Light;
+    color: #428ac9; }
   .get-in-touch-block h2 {
-    font-size: 3.5em;
+    font-size: calc(30px + 14 * ((100vw - 320px) / 840));
     text-transform: uppercase;
     font-family: Roboto-Light;
     color: #428ac9; }
   .get-in-touch-block p {
     font-family: Roboto-Regular;
     color: #00648c;
-    font-size: 150%;
-    line-height: 115%;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 840));
     margin-top: 1em; }
   .get-in-touch-block span {
     font-family: Roboto-Bold; }
@@ -361,7 +367,11 @@
   .worldwide-locations ul {
     font-family: Roboto-Bold;
     color: #004c8c;
-    border-right: 1px solid gray; }
+    border-right: 1px solid gray;
+    text-transform: uppercase; }
+    @media (max-width: 992px) {
+      .worldwide-locations ul {
+        border: none; } }
     .worldwide-locations ul li {
       list-style: none;
       font-family: Roboto-Regular;
@@ -471,6 +481,16 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; } }
+
+.ww-locations-gap {
+  min-height: 100px; }
+  .ww-locations-gap h3 {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 840));
+    text-transform: uppercase;
+    font-family: Roboto-Black;
+    color: #004c8c; }
+  .ww-locations-gap img {
+    margin-left: 5px; }
 
 .footer-form {
   min-height: 700px;

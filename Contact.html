@@ -144,6 +144,18 @@
     </div>
 </div>
 
+<!-- Worldwide locations gap block -->
+<div class="container-fluid d-flex align-items-center ww-locations-gap">
+    <h3>Our worldwide team & locations <img src="images/mini-logo.svg" alt=""></h3>
+</div>
+
+<!-- Google map API locations -->
+<div class="container-fluid">
+    <div id="map">
+
+    </div>
+</div>
+
 <!-- Footer form -->
 <div class="container-fluid footer-form">
     <div class="d-flex flex-column layer">
@@ -201,6 +213,51 @@
     <h4> © 2016 CELEIX CORp. </h4>
 </div>
 
+<!-- Google map scripts -->
+<script>
+    function initMap() {
+        let centerPosition = {
+            lat: 17.932257,
+            lng: -24.760161
+        };
+
+
+
+        const options = {
+            zoom: 2,
+            center: centerPosition
+        };
+
+
+
+        let map = new google.maps.Map(document.getElementById('map'), options);
+
+        addMarker({lat: 16.160733, lng: -93.503709})
+        addMarker({lat: 21.204812, lng: -86.816371})
+        addMarker({lat: 10.725044, lng: -82.813721})
+        addMarker({lat: -23.971198, lng: -49.396004})
+        addMarker({lat: 19.288233, lng: 22.887120})
+        addMarker({lat: 4.346847, lng: 30.412571})
+        addMarker({lat: 14.134482, lng: 35.423175})
+        addMarker({lat: 18.074385, lng: 46.112640})
+        function addMarker(coordinates) {
+            const marker = new google.maps.Marker({
+                position:coordinates,
+                map:map
+            })
+        }
+
+    }
+</script>
+
+<!--Google API -->
+<script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIF4SA4YjtG16YiH9CJG_W-KyLTC8fvpU&callback=initMap"
+>
+
+</script>
 
 <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
