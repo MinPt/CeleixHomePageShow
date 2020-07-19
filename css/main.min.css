@@ -133,6 +133,61 @@
   .About-section img {
     margin-left: 1em; }
 
+.about-header-container {
+  background-image: url(../images/about-header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  height: auto;
+  color: white;
+  padding: 0; }
+  .about-header-container .layer {
+    min-height: 400px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 100, 240, 0.6); }
+    .about-header-container .layer .about-block {
+      height: 300px;
+      padding: 0 16px;
+      margin: 0em 1em; }
+      .about-header-container .layer .about-block h1 {
+        font-size: calc(42px + 47 * ((100vw - 320px) / 840));
+        padding: 0;
+        margin: 0;
+        font-family: Roboto-Light;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        line-height: 1em; }
+  .about-header-container .nav-item {
+    padding-top: 0.5rem; }
+  .about-header-container .nav-link-item {
+    text-decoration: none;
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-transform: uppercase;
+    font-size: calc(8px + 6 * ((100vw - 320px) / 840));
+    font-family: Roboto-Regular;
+    transition-duration: 0.2s; }
+    .about-header-container .nav-link-item:hover {
+      color: white;
+      text-decoration: none;
+      border-bottom: 3px solid white;
+      padding-bottom: 5px;
+      transition-duration: 0.2s; }
+    @media (max-width: 767px) {
+      .about-header-container .nav-link-item {
+        font-size: 1rem;
+        margin: 2em; } }
+  .about-header-container nav {
+    margin-left: 1em; }
+    .about-header-container nav .logo {
+      width: 25vw;
+      max-width: 200px; }
+
 .contact-header-container {
   background-image: url(../images/contact-header-img.jpg);
   background-repeat: no-repeat;
@@ -332,6 +387,426 @@
     .get-in-touch-block span .font-roboto-light {
       font-family: Roboto-Light; }
 
+.who-is-celeix {
+  min-height: 615px; }
+  .who-is-celeix div {
+    margin: 0;
+    padding: 1em; }
+    .who-is-celeix div p {
+      padding: 1em 0em;
+      font-family: Roboto-Light;
+      color: #004c8c;
+      letter-spacing: 1px;
+      font-weight: bold; }
+  .who-is-celeix h2 {
+    font-family: Roboto-Light;
+    color: #428ac9;
+    font-size: calc(30px + 14 * ((100vw - 320px) / 840));
+    text-transform: uppercase;
+    padding: 0.5em 0em; }
+  .who-is-celeix span {
+    font-family: Roboto-Light; }
+
+.principle-core {
+  min-height: 456px;
+  background-color: rgba(119, 169, 236, 0.2);
+  margin: 0;
+  padding: 1em; }
+  .principle-core ul {
+    font-family: Roboto-bold;
+    color: #004c8c; }
+  .principle-core li {
+    font-family: Roboto-Light;
+    color: #004c8c;
+    list-style: square; }
+
+.eng-realm-wrapper {
+  min-height: 530px;
+  margin-top: 1em;
+  background-image: url(../images/eng-realm-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 60vw;
+  color: white;
+  padding: 0; }
+  .eng-realm-wrapper .layer {
+    background-color: rgba(155, 155, 155, 0.7);
+    min-height: inherit;
+    color: #004c8c; }
+    .eng-realm-wrapper .layer * {
+      padding: 1em; }
+    .eng-realm-wrapper .layer p {
+      width: 60%;
+      font-family: Roboto-Light; }
+    .eng-realm-wrapper .layer h4 {
+      font-family: Roboto-Black; }
+
+.engineering-block {
+  min-height: 780px;
+  padding: 0; }
+  .engineering-block p {
+    font-family: Roboto-Light;
+    color: #004c8c;
+    font-weight: bold; }
+  .engineering-block h4 {
+    color: #004c8c;
+    font-family: Roboto-Black;
+    text-transform: uppercase; }
+  .engineering-block .eng-text-under-img {
+    width: 100%; }
+  @media (max-width: 767px) {
+    .engineering-block .eng-text-under-img__item {
+      margin-top: 2em;
+      text-align: center; } }
+  .engineering-block .wrapper {
+    width: 100%;
+    color: white;
+    font-family: Roboto-Light;
+    text-transform: uppercase;
+    padding: 2em; }
+    @media (max-width: 767px) {
+      .engineering-block .wrapper .d-flex {
+        flex-direction: column;
+        align-items: center; } }
+    .engineering-block .wrapper div {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      margin-top: 0.5em; }
+      .engineering-block .wrapper div h3 {
+        font-size: 125%;
+        margin: 0;
+        padding: 1em 0.5em;
+        font-family: Roboto-Light; }
+      .engineering-block .wrapper div .img-1 {
+        background-color: grey;
+        width: 40%;
+        min-height: 190px;
+        padding: 0; }
+        .engineering-block .wrapper div .img-1 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(71, 132, 198, 0.6); }
+        @media (max-width: 767px) {
+          .engineering-block .wrapper div .img-1 {
+            width: 90%; } }
+      .engineering-block .wrapper div .img-2 {
+        background-image: url("../images/eng-consulting-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 20%;
+        width: 60%;
+        min-height: 190px; }
+        .engineering-block .wrapper div .img-2 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(0, 0, 0, 0.6); }
+        @media (max-width: 767px) {
+          .engineering-block .wrapper div .img-2 {
+            width: 90%; } }
+      .engineering-block .wrapper div .img-3 {
+        background-image: url("../images/eng-dev-for-eng-img.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 60%;
+        min-height: 190px;
+        padding: 0; }
+        .engineering-block .wrapper div .img-3 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(0, 0, 0, 0.6); }
+        @media (max-width: 767px) {
+          .engineering-block .wrapper div .img-3 {
+            width: 90%; } }
+      .engineering-block .wrapper div .img-4 {
+        background-image: url("../images/eng-services-img.jpg");
+        background-position: center center;
+        width: 40%;
+        min-height: 190px; }
+        .engineering-block .wrapper div .img-4 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(71, 132, 198, 0.6); }
+        @media (max-width: 767px) {
+          .engineering-block .wrapper div .img-4 {
+            width: 90%; } }
+
+.engineering-block-2 {
+  min-height: 780px;
+  padding: 0; }
+  .engineering-block-2 p {
+    font-family: Roboto-Light;
+    color: #004c8c;
+    font-weight: bold; }
+  .engineering-block-2 h4 {
+    color: #004c8c;
+    font-family: Roboto-Black;
+    text-transform: uppercase; }
+  .engineering-block-2 .eng-text-under-img {
+    width: 100%; }
+  @media (max-width: 767px) {
+    .engineering-block-2 .eng-text-under-img__item {
+      margin-top: 2em; } }
+  @media (max-width: 767px) {
+    .engineering-block-2 .d-flex {
+      text-align: center; } }
+  .engineering-block-2 .wrapper {
+    width: 100%;
+    color: white;
+    font-family: Roboto-Light;
+    text-transform: uppercase;
+    padding: 2em; }
+    @media (max-width: 767px) {
+      .engineering-block-2 .wrapper .d-flex {
+        flex-direction: column;
+        align-items: center; } }
+    .engineering-block-2 .wrapper div {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      margin-top: 0.5em; }
+      .engineering-block-2 .wrapper div h3 {
+        font-size: 125%;
+        margin: 0;
+        padding: 1em 0.5em;
+        font-family: Roboto-Light; }
+      .engineering-block-2 .wrapper div .img-1 {
+        background-image: url("../images/3d-tech.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 80%;
+        background-position-x: 20%;
+        width: 40%;
+        min-height: 190px;
+        padding: 0; }
+        .engineering-block-2 .wrapper div .img-1 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(157, 157, 157, 0.8); }
+        @media (max-width: 767px) {
+          .engineering-block-2 .wrapper div .img-1 {
+            width: 90%; } }
+      .engineering-block-2 .wrapper div .img-2 {
+        background-image: url("../images/soft-eng.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 20%;
+        width: 60%;
+        min-height: 190px; }
+        .engineering-block-2 .wrapper div .img-2 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(91, 91, 91, 0.8); }
+        @media (max-width: 767px) {
+          .engineering-block-2 .wrapper div .img-2 {
+            width: 90%; } }
+      .engineering-block-2 .wrapper div .img-3 {
+        background-image: url("../images/social-eng.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 60%;
+        min-height: 295px;
+        padding: 0; }
+        .engineering-block-2 .wrapper div .img-3 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(13, 65, 124, 0.8); }
+        @media (max-width: 767px) {
+          .engineering-block-2 .wrapper div .img-3 {
+            width: 90%; } }
+      .engineering-block-2 .wrapper div .img-4 {
+        background-image: url("../images/cloud-tech-data-analytics.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40%;
+        min-height: 295px; }
+        .engineering-block-2 .wrapper div .img-4 .layer {
+          min-height: inherit;
+          width: 100%;
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          background-color: rgba(71, 132, 198, 0.8); }
+        @media (max-width: 767px) {
+          .engineering-block-2 .wrapper div .img-4 {
+            width: 90%; } }
+
+.our-talent {
+  min-height: 660px;
+  background-color: rgba(119, 169, 236, 0.2);
+  padding: 3em; }
+  .our-talent h4 {
+    font-family: Roboto-Black;
+    color: #004c8c; }
+  .our-talent p {
+    font-family: Roboto-Light;
+    letter-spacing: 1px;
+    color: #004c8c; }
+  @media (max-width: 767px) {
+    .our-talent {
+      text-align: center; } }
+  .our-talent .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 767px) {
+      .our-talent .wrapper {
+        display: none; } }
+    .our-talent .wrapper .img {
+      min-height: 368px;
+      width: 24%;
+      box-shadow: inset 0px -50px 50px 24px rgba(0, 0, 0, 0.4);
+      color: white;
+      font-family: Roboto-Black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 1em; }
+    .our-talent .wrapper .img-1 {
+      background-image: url("../images/team-member-1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+    .our-talent .wrapper .img-2 {
+      background-image: url("../images/team-member-2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+    .our-talent .wrapper .img-3 {
+      background-image: url("../images/team-member-3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+    .our-talent .wrapper .img-4 {
+      background-image: url("../images/team-member-4.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+  .our-talent #talents-carousel {
+    display: none; }
+    @media (max-width: 767px) {
+      .our-talent #talents-carousel {
+        display: flex; }
+        .our-talent #talents-carousel * {
+          color: white; }
+        .our-talent #talents-carousel .carousel-item div {
+          min-height: 368px;
+          box-shadow: inset 0px -50px 50px 24px rgba(0, 0, 0, 0.4); }
+        .our-talent #talents-carousel .img-1 {
+          background-image: url("../images/team-member-1.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: center; }
+        .our-talent #talents-carousel .img-2 {
+          background-image: url("../images/team-member-2.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: center; }
+        .our-talent #talents-carousel .img-3 {
+          background-image: url("../images/team-member-3.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: center; }
+        .our-talent #talents-carousel .img-4 {
+          background-image: url("../images/team-member-4.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: center; } }
+
+.bios-block {
+  min-height: 445px;
+  margin: 0;
+  padding: 3em; }
+  .bios-block .d-flex {
+    width: 100%; }
+  .bios-block h4 {
+    text-transform: uppercase;
+    font-family: Roboto-Black;
+    color: #004c8c;
+    letter-spacing: 1px; }
+  .bios-block p {
+    font-family: Roboto-Light;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #004c8c; }
+  @media (max-width: 920px) {
+    .bios-block #bios-carousel .carousel-item div {
+      display: flex;
+      flex-direction: column; }
+      .bios-block #bios-carousel .carousel-item div .member-img {
+        margin-bottom: 1em;
+        width: 200px;
+        height: 200px; }
+      .bios-block #bios-carousel .carousel-item div p {
+        width: 100%; }
+    .bios-block #bios-carousel .carousel-next-button {
+      width: 20%; } }
+  .bios-block #bios-carousel .member-img {
+    width: 20vw;
+    border-radius: 100%;
+    margin-right: 1em;
+    height: 20vw; }
+  .bios-block #bios-carousel .carousel-next-button {
+    margin-left: 100%; }
+  .bios-block #bios-carousel p {
+    width: 70%; }
+
+.tech-horizon {
+  min-height: 675px;
+  background-image: url("../images/tech-horizon.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50vw;
+  background-color: rgba(71, 192, 255, 0.5);
+  padding: 0;
+  margin: 0; }
+  @media (orientation: portrait) {
+    .tech-horizon {
+      background-image: none; } }
+  .tech-horizon .layer {
+    background-color: rgba(255, 255, 255, 0.7);
+    min-height: inherit;
+    padding: 0;
+    margin: 0; }
+    @media (orientation: portrait) {
+      .tech-horizon .layer {
+        text-align: center; } }
+    .tech-horizon .layer .text {
+      width: 75%;
+      padding: 3em; }
+      @media (orientation: portrait) {
+        .tech-horizon .layer .text {
+          width: 100%; } }
+      .tech-horizon .layer .text p {
+        font-family: Roboto-Light;
+        color: #004c8c;
+        margin-top: 2em;
+        letter-spacing: 1px;
+        font-weight: bold; }
+      .tech-horizon .layer .text h4 {
+        font-family: Roboto-Black;
+        color: #004c8c;
+        text-transform: uppercase; }
+      .tech-horizon .layer .text img {
+        margin-left: 1em; }
+
 .ways-to-reach {
   min-height: 380px;
   height: auto; }
@@ -455,14 +930,13 @@
         box-shadow: inset 0px 0px 1vw 1vw rgba(255, 255, 255, 0.5);
         transition-duration: 0.5s; }
 
-#Industrial-carousel h4 {
-  text-transform: uppercase; }
-
 #Industrial-carousel {
   display: none; }
   @media (max-width: 767px) {
     #Industrial-carousel {
       display: flex; }
+      #Industrial-carousel h4 {
+        text-transform: uppercase; }
       #Industrial-carousel .carousel-inner div {
         min-height: 478px; }
       #Industrial-carousel .carousel-inner h4 {
